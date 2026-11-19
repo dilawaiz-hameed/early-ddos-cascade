@@ -1,0 +1,11 @@
+Proposed (edge) {'train_s': 0.112, 'lat_p50_ms': 0.3, 'lat_p95_ms': 0.402, 'throughput_fps': 253757.16, 'size_kb': 4.175, 'deferred': None, 'state_bytes_per_flow': 320}
+Proposed (enterprise) {'train_s': 0.178, 'lat_p50_ms': 0.452, 'lat_p95_ms': 1.03, 'throughput_fps': 173492.325, 'size_kb': 9.131, 'deferred': 0.08, 'state_bytes_per_flow': 240}
+Proposed (cloud) {'train_s': 0.224, 'lat_p50_ms': 0.309, 'lat_p95_ms': 1.122, 'throughput_fps': 173525.794, 'size_kb': 2522.931, 'deferred': 0.072, 'state_bytes_per_flow': 240}
+Full-flow RF-100 {'train_s': 0.428, 'lat_p50_ms': 5.215, 'lat_p95_ms': 7.539, 'throughput_fps': 148030.891, 'size_kb': 403.708, 'deferred': None, 'state_bytes_per_flow': None}
+Full-flow GBDT (HGB) {'train_s': 1.374, 'lat_p50_ms': 1.419, 'lat_p95_ms': 1.68, 'throughput_fps': 89142.251, 'size_kb': 533.403, 'deferred': None, 'state_bytes_per_flow': None}
+Full-flow MLP (32,16) {'train_s': 0.661, 'lat_p50_ms': 0.461, 'lat_p95_ms': 0.55, 'throughput_fps': 238931.755, 'size_kb': 27.29, 'deferred': None, 'state_bytes_per_flow': None}
+P2: kNN + NearMiss {'train_s': 0.05, 'lat_p50_ms': 0.76, 'lat_p95_ms': 0.911, 'throughput_fps': 111904.887, 'size_kb': 195.301, 'deferred': None, 'state_bytes_per_flow': None}
+Fixed early RF-100 (N=8,T=0.5s) {'train_s': 0.577, 'lat_p50_ms': 5.208, 'lat_p95_ms': 6.904, 'throughput_fps': 116356.633, 'size_kb': 411.833, 'deferred': None, 'state_bytes_per_flow': 640}
+Fixed early DT-8 (N=2,T=0.1s) {'train_s': 0.014, 'lat_p50_ms': 0.306, 'lat_p95_ms': 0.42, 'throughput_fps': 229005.335, 'size_kb': 5.425, 'deferred': None, 'state_bytes_per_flow': 160}
+E1: Isolation Forest (N=8,T=0.5s) {'train_s': 0.101, 'lat_p50_ms': 5.591, 'lat_p95_ms': 7.829, 'throughput_fps': 125913.657, 'size_kb': 875.696, 'deferred': None, 'state_bytes_per_flow': 640}
+figures written

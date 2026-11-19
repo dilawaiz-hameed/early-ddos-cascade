@@ -1,0 +1,92 @@
+{
+ "Proposed (edge)": {
+  "train_s": 0.11244709300000011,
+  "lat_p50_ms": 0.29998800005159865,
+  "lat_p95_ms": 0.4021351498522564,
+  "throughput_fps": 253757.1602314224,
+  "size_kb": 4.1748046875,
+  "deferred": null,
+  "state_bytes_per_flow": 320
+ },
+ "Proposed (enterprise)": {
+  "train_s": 0.17781116499999983,
+  "lat_p50_ms": 0.45218550008030434,
+  "lat_p95_ms": 1.0295007999729935,
+  "throughput_fps": 173492.32459035545,
+  "size_kb": 9.130859375,
+  "deferred": 0.08,
+  "state_bytes_per_flow": 240
+ },
+ "Proposed (cloud)": {
+  "train_s": 0.22398968800000008,
+  "lat_p50_ms": 0.3091435000897036,
+  "lat_p95_ms": 1.1216330998422563,
+  "throughput_fps": 173525.7942634875,
+  "size_kb": 2522.9306640625,
+  "deferred": 0.07175,
+  "state_bytes_per_flow": 240
+ },
+ "Full-flow RF-100": {
+  "train_s": 0.42777775500000015,
+  "lat_p50_ms": 5.2145454999390495,
+  "lat_p95_ms": 7.538906400327505,
+  "throughput_fps": 148030.89123508753,
+  "size_kb": 403.7080078125,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "Full-flow GBDT (HGB)": {
+  "train_s": 1.3736617469999999,
+  "lat_p50_ms": 1.41924450008446,
+  "lat_p95_ms": 1.6795002002709227,
+  "throughput_fps": 89142.25097596146,
+  "size_kb": 533.4033203125,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "Full-flow MLP (32,16)": {
+  "train_s": 0.6609141870000004,
+  "lat_p50_ms": 0.46140450012899237,
+  "lat_p95_ms": 0.5500834499116537,
+  "throughput_fps": 238931.75523965768,
+  "size_kb": 27.2900390625,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "P2: kNN + NearMiss": {
+  "train_s": 0.04967526999999983,
+  "lat_p50_ms": 0.7601149998208712,
+  "lat_p95_ms": 0.9114959502539932,
+  "throughput_fps": 111904.88666589749,
+  "size_kb": 195.30078125,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "Fixed early RF-100 (N=8,T=0.5s)": {
+  "train_s": 0.57667497,
+  "lat_p50_ms": 5.208143499885409,
+  "lat_p95_ms": 6.90395415022067,
+  "throughput_fps": 116356.63296477869,
+  "size_kb": 411.8330078125,
+  "deferred": null,
+  "state_bytes_per_flow": 640
+ },
+ "Fixed early DT-8 (N=2,T=0.1s)": {
+  "train_s": 0.013559246999999885,
+  "lat_p50_ms": 0.30630799983555335,
+  "lat_p95_ms": 0.41961300016737374,
+  "throughput_fps": 229005.33479408914,
+  "size_kb": 5.4248046875,
+  "deferred": null,
+  "state_bytes_per_flow": 160
+ },
+ "E1: Isolation Forest (N=8,T=0.5s)": {
+  "train_s": 0.10141573599999987,
+  "lat_p50_ms": 5.591043999856993,
+  "lat_p95_ms": 7.828556150070654,
+  "throughput_fps": 125913.65703863403,
+  "size_kb": 875.6962890625,
+  "deferred": null,
+  "state_bytes_per_flow": 640
+ }
+}

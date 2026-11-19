@@ -1,0 +1,92 @@
+{
+ "Proposed (edge)": {
+  "train_s": 2.484375,
+  "lat_p50_ms": 0.5545499734580517,
+  "lat_p95_ms": 0.7435851730406285,
+  "throughput_fps": 107664.06655339418,
+  "size_kb": 4.6103515625,
+  "deferred": null,
+  "state_bytes_per_flow": 2560
+ },
+ "Proposed (enterprise)": {
+  "train_s": 5.625,
+  "lat_p50_ms": 0.5841499660164118,
+  "lat_p95_ms": 1.0983747430145745,
+  "throughput_fps": 85882.43137514066,
+  "size_kb": 312.0810546875,
+  "deferred": 0.00825,
+  "state_bytes_per_flow": 320
+ },
+ "Proposed (cloud)": {
+  "train_s": 2.78125,
+  "lat_p50_ms": 2.9969499446451664,
+  "lat_p95_ms": 3.6906900350004435,
+  "throughput_fps": 91434.42288691497,
+  "size_kb": 134.1474609375,
+  "deferred": null,
+  "state_bytes_per_flow": 320
+ },
+ "Full-flow RF-100": {
+  "train_s": 2.734375,
+  "lat_p50_ms": 13.213900150731206,
+  "lat_p95_ms": 22.78917527291924,
+  "throughput_fps": 39130.979121905715,
+  "size_kb": 656.83984375,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "Full-flow GBDT (HGB)": {
+  "train_s": 3.921875,
+  "lat_p50_ms": 7.150399964302778,
+  "lat_p95_ms": 27.554279984906323,
+  "throughput_fps": 22075.493777945147,
+  "size_kb": 596.9404296875,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "Full-flow MLP (32,16)": {
+  "train_s": 10.578125,
+  "lat_p50_ms": 0.8234500419348478,
+  "lat_p95_ms": 1.8028096295893206,
+  "throughput_fps": 90897.72933944223,
+  "size_kb": 27.6435546875,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "P2: kNN + NearMiss": {
+  "train_s": 2.09375,
+  "lat_p50_ms": 2.624149899929762,
+  "lat_p95_ms": 6.38979005161674,
+  "throughput_fps": 10485.648026795729,
+  "size_kb": 1514.7939453125,
+  "deferred": null,
+  "state_bytes_per_flow": null
+ },
+ "Fixed early RF-100 (N=8,T=0.5s)": {
+  "train_s": 4.90625,
+  "lat_p50_ms": 9.414599975571036,
+  "lat_p95_ms": 13.722154730930932,
+  "throughput_fps": 31239.041925255504,
+  "size_kb": 544.3310546875,
+  "deferred": null,
+  "state_bytes_per_flow": 640
+ },
+ "Fixed early DT-8 (N=2,T=0.1s)": {
+  "train_s": 2.578125,
+  "lat_p50_ms": 0.5688501987606287,
+  "lat_p95_ms": 0.6928501417860389,
+  "throughput_fps": 73568.76544136855,
+  "size_kb": 4.6103515625,
+  "deferred": null,
+  "state_bytes_per_flow": 160
+ },
+ "E1: Isolation Forest (N=8,T=0.5s)": {
+  "train_s": 0.25,
+  "lat_p50_ms": 10.521749965846539,
+  "lat_p95_ms": 18.240780103951696,
+  "throughput_fps": 39445.51432504609,
+  "size_kb": 924.2900390625,
+  "deferred": null,
+  "state_bytes_per_flow": 640
+ }
+}

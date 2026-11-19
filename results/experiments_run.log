@@ -1,0 +1,62 @@
+{'ga_f1': (0.9445, 0.0024), 'nsga2': (0.9546, 0.001), 'random': (0.9481, 0.0016)}
+Proposed (edge)                    F1 0.9979 FPR 0.0000 TTDmed 0.100s ext F1 0.574 size 4.2KB lat 0.28ms
+Proposed (enterprise)              F1 0.9892 FPR 0.0359 TTDmed 0.000s ext F1 0.425 size 9.1KB lat 0.29ms
+Proposed (cloud)                   F1 0.9989 FPR 0.0040 TTDmed 0.000s ext F1 0.541 size 2522.9KB lat 0.39ms
+Proposed (enterprise) + IF fallback F1 0.9722 FPR 0.0996 TTDmed 0.000s ext F1 0.586 size 884.8KB lat 5.88ms
+Random-search best                 F1 0.9968 FPR 0.0040 TTDmed 0.100s ext F1 0.462 size 925.5KB lat 1.22ms
+GA (F1 only) best                  F1 0.9979 FPR 0.0080 TTDmed 0.050s ext F1 0.438 size 421.5KB lat 0.71ms
+Full-flow RF-100                   F1 0.9957 FPR 0.0159 TTDmed 60.000s ext F1 0.809 size 403.7KB lat 5.29ms
+Full-flow GBDT (HGB)               F1 0.9903 FPR 0.0359 TTDmed 60.000s ext F1 0.765 size 533.4KB lat 1.66ms
+Full-flow MLP (32,16)              F1 0.9781 FPR 0.0757 TTDmed 60.000s ext F1 0.559 size 27.3KB lat 0.55ms
+P2: CNB + NearMiss                 F1 0.6379 FPR 0.0040 TTDmed 60.000s ext F1 0.811 size 2.9KB lat 0.87ms
+P2: kNN + NearMiss                 F1 0.5300 FPR 0.0080 TTDmed 60.000s ext F1 0.202 size 195.3KB lat 0.74ms
+P2: RF + NearMiss                  F1 0.5197 FPR 0.0080 TTDmed 60.000s ext F1 0.570 size 85.6KB lat 5.03ms
+P2: LR + NearMiss                  F1 0.5861 FPR 0.0080 TTDmed 60.000s ext F1 0.298 size 1.6KB lat 0.49ms
+E5: ET-top10 + RF                  F1 0.9989 FPR 0.0040 TTDmed 60.000s ext F1 0.787 size 466.5KB lat 4.80ms
+E5: ET-top10 + LR                  F1 0.9583 FPR 0.0120 TTDmed 60.000s ext F1 0.672 size 1.2KB lat 0.49ms
+E5: ET-top10 + NB                  F1 0.9622 FPR 0.0319 TTDmed 60.000s ext F1 0.910 size 1.2KB lat 0.52ms
+E1: One-Class SVM (N=8,T=0.5s)     F1 0.5248 FPR 0.0279 TTDmed 0.500s ext F1 0.722 size 11.4KB lat 0.52ms
+E1: Isolation Forest (N=8,T=0.5s)  F1 0.9734 FPR 0.0956 TTDmed 0.500s ext F1 0.591 size 875.7KB lat 5.53ms
+Fixed early RF-100 (N=8,T=0.5s)    F1 0.9979 FPR 0.0040 TTDmed 0.500s ext F1 0.369 size 411.8KB lat 5.03ms
+Fixed early DT-8 (N=2,T=0.1s)      F1 0.9821 FPR 0.0279 TTDmed 0.000s ext F1 0.580 size 5.4KB lat 0.31ms
+EXT->CIC Proposed (enterprise) 0.9193 0.2672
+EXT->CIC Full-flow RF-100 0.9704 0.4713
+EXT->CIC Fixed early RF-100 (N=8,T=0.5s) 0.9695 0.4393
+A done
+LOAO DNS {'Proposed (enterprise)': np.float64(0.989), 'Proposed (enterprise) + IF fallback': np.float64(1.0), 'Full-flow RF-100': np.float64(1.0), 'Fixed early RF-100 (N=8,T=0.5s)': np.float64(0.966), 'E1: Isolation Forest (N=8,T=0.5s)': np.float64(1.0)}
+LOAO SynFlood {'Proposed (enterprise)': np.float64(0.342), 'Proposed (enterprise) + IF fallback': np.float64(1.0), 'Full-flow RF-100': np.float64(0.0), 'Fixed early RF-100 (N=8,T=0.5s)': np.float64(0.405), 'E1: Isolation Forest (N=8,T=0.5s)': np.float64(1.0)}
+LOAO UDPLag {'Proposed (enterprise)': np.float64(0.999), 'Proposed (enterprise) + IF fallback': np.float64(1.0), 'Full-flow RF-100': np.float64(0.842), 'Fixed early RF-100 (N=8,T=0.5s)': np.float64(0.839), 'E1: Isolation Forest (N=8,T=0.5s)': np.float64(1.0)}
+LOAO WebDDoS {'Proposed (enterprise)': np.float64(0.0), 'Proposed (enterprise) + IF fallback': np.float64(1.0), 'Full-flow RF-100': np.float64(0.034), 'Fixed early RF-100 (N=8,T=0.5s)': np.float64(0.0), 'E1: Isolation Forest (N=8,T=0.5s)': np.float64(1.0)}
+C done
+ABL Full proposed (enterprise) {'cic_f1': 0.9892, 'ext_f1': 0.4247, 'ttd_median': 0.0, 'ttd_mean': 0.0018, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL No cascade (Stage 2 only) {'cic_f1': 0.9979, 'ext_f1': 0.4174, 'ttd_median': 0.1, 'ttd_mean': 0.0794, 'decision_mean_all': 0.0794, 'fpr': np.float64(0.008), 'cost': '', 'recall_by_type': ''}
+ABL Stage 1 only (no deferral) {'cic_f1': 0.8957, 'ext_f1': 0.3529, 'ttd_median': 0.0, 'ttd_mean': 0.0, 'decision_mean_all': 0.0, 'fpr': np.float64(0.0279), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 window N2=4 {'cic_f1': 0.9892, 'ext_f1': 0.4267, 'ttd_median': 0.0, 'ttd_mean': 0.0018, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 window N2=8 {'cic_f1': 0.9904, 'ext_f1': 0.2927, 'ttd_median': 0.0, 'ttd_mean': 0.0026, 'decision_mean_all': 0.0026, 'fpr': np.float64(0.0279), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 window N2=16 {'cic_f1': 0.9904, 'ext_f1': 0.4301, 'ttd_median': 0.0, 'ttd_mean': 0.003, 'decision_mean_all': 0.003, 'fpr': np.float64(0.0279), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 window N2=32 {'cic_f1': 0.9904, 'ext_f1': 0.4235, 'ttd_median': 0.0, 'ttd_mean': 0.003, 'decision_mean_all': 0.003, 'fpr': np.float64(0.0279), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 window T2=0.5s {'cic_f1': 0.9892, 'ext_f1': 0.4538, 'ttd_median': 0.0, 'ttd_mean': 0.0089, 'decision_mean_all': 0.0089, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 window T2=2.0s {'cic_f1': 0.9881, 'ext_f1': 0.4688, 'ttd_median': 0.0, 'ttd_mean': 0.0354, 'decision_mean_all': 0.0354, 'fpr': np.float64(0.0398), 'cost': '', 'recall_by_type': ''}
+ABL Feature selection off (all 31) {'cic_f1': 0.9914, 'ext_f1': 0.5578, 'ttd_median': 0.0, 'ttd_mean': 0.0003, 'decision_mean_all': 0.0003, 'fpr': np.float64(0.0319), 'cost': '', 'recall_by_type': ''}
+ABL Drop group: intensity {'cic_f1': 0.9861, 'ext_f1': 0.575, 'ttd_median': 0.0, 'ttd_mean': 0.0357, 'decision_mean_all': 0.0357, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Drop group: temporal {'cic_f1': 0.9892, 'ext_f1': 0.2858, 'ttd_median': 0.0, 'ttd_mean': 0.0016, 'decision_mean_all': 0.0016, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Drop group: direction {'cic_f1': 0.9892, 'ext_f1': 0.2937, 'ttd_median': 0.0, 'ttd_mean': 0.0018, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Drop group: protocol {'cic_f1': 0.9882, 'ext_f1': 0.3958, 'ttd_median': 0.0, 'ttd_mean': 0.0019, 'decision_mean_all': 0.0019, 'fpr': np.float64(0.0319), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 family: RF {'cic_f1': 0.985, 'ext_f1': 0.4066, 'ttd_median': 0.0, 'ttd_mean': 0.0017, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0398), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 family: HGB {'cic_f1': 0.984, 'ext_f1': 0.2201, 'ttd_median': 0.0, 'ttd_mean': 0.0017, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 family: kNN {'cic_f1': 0.9882, 'ext_f1': 0.2547, 'ttd_median': 0.0, 'ttd_mean': 0.0018, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 family: LR {'cic_f1': 0.9804, 'ext_f1': 0.2326, 'ttd_median': 0.0, 'ttd_mean': 0.0018, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0637), 'cost': '', 'recall_by_type': ''}
+ABL Stage-2 family: MLP {'cic_f1': 0.9793, 'ext_f1': 0.2304, 'ttd_median': 0.0, 'ttd_mean': 0.0018, 'decision_mean_all': 0.0018, 'fpr': np.float64(0.0677), 'cost': '', 'recall_by_type': ''}
+ABL Stage-1 depth d1=2 {'cic_f1': 0.9663, 'ext_f1': 0.2998, 'ttd_median': 0.0, 'ttd_mean': 0.0052, 'decision_mean_all': 0.0052, 'fpr': np.float64(0.1195), 'cost': '', 'recall_by_type': ''}
+ABL Stage-1 depth d1=3 {'cic_f1': 0.9892, 'ext_f1': 0.3712, 'ttd_median': 0.0, 'ttd_mean': 0.0203, 'decision_mean_all': 0.0203, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Stage-1 depth d1=5 {'cic_f1': 0.9882, 'ext_f1': 0.3712, 'ttd_median': 0.0, 'ttd_mean': 0.0019, 'decision_mean_all': 0.0019, 'fpr': np.float64(0.0359), 'cost': '', 'recall_by_type': ''}
+ABL Stricter gate (tau 0.02/0.98) {'cic_f1': 0.971, 'ext_f1': 0.4028, 'ttd_median': 0.0, 'ttd_mean': 0.0013, 'decision_mean_all': 0.0013, 'fpr': np.float64(0.0319), 'cost': '', 'recall_by_type': ''}
+ABL Looser gate (tau 0.30/0.60) {'cic_f1': 0.8957, 'ext_f1': 0.3529, 'ttd_median': 0.0, 'ttd_mean': 0.0, 'decision_mean_all': 0.0, 'fpr': np.float64(0.0279), 'cost': '', 'recall_by_type': ''}
+ABL Stage-1 window N1=1 {'cic_f1': 0.9979, 'ext_f1': 0.5634, 'ttd_median': 0.0, 'ttd_mean': 0.0386, 'decision_mean_all': 0.0386, 'fpr': np.float64(0.008), 'cost': '', 'recall_by_type': ''}
+ablation done
+stress 1 {'Proposed (enterprise)': {'recall': 0.9997435239805078, 'ttd_median': 9.5367431640625e-07}, 'Fixed early RF-100 (N=8,T=0.5s)': {'recall': 0.9997435239805078, 'ttd_median': 0.5}}
+stress 2 {'Proposed (enterprise)': {'recall': 0.997178763785586, 'ttd_median': 0.00010395050048828125}, 'Fixed early RF-100 (N=8,T=0.5s)': {'recall': 0.9997435239805078, 'ttd_median': 0.5}}
+stress 5 {'Proposed (enterprise)': {'recall': 0.8653500897666068, 'ttd_median': 0.1}, 'Fixed early RF-100 (N=8,T=0.5s)': {'recall': 0.9982046678635548, 'ttd_median': 0.5}}
+stress 10 {'Proposed (enterprise)': {'recall': 0.800718132854578, 'ttd_median': 0.1}, 'Fixed early RF-100 (N=8,T=0.5s)': {'recall': 0.9976917158245704, 'ttd_median': 0.5}}
+stress 50 {'Proposed (enterprise)': {'recall': 0.9558861246473455, 'ttd_median': 4.76837158203125e-05}, 'Fixed early RF-100 (N=8,T=0.5s)': {'recall': 0.9933316234932034, 'ttd_median': 0.5}}
+ALL DONE

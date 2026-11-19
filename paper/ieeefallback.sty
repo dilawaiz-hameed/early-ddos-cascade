@@ -1,0 +1,24 @@
+% ieeefallback.sty -- used ONLY when IEEEtran.cls is not installed (e.g. a minimal TeX setup).
+% It approximates the IEEE two-column journal layout so the paper still compiles.
+% On Overleaf or any full TeX Live, main.tex loads the official IEEEtran class instead.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ieeefallback}[2026/11/19 IEEE-like fallback layout]
+\RequirePackage[letterpaper,top=0.75in,bottom=1in,left=0.625in,right=0.625in,columnsep=0.25in]{geometry}
+\RequirePackage{mathptmx}
+\RequirePackage[small,bf,labelsep=period]{caption}
+\RequirePackage{titlesec}
+\setlength{\parindent}{1em}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\titleformat{\section}{\centering\normalsize\scshape}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\itshape}{\thesubsection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\newcommand{\IEEEauthorblockN}[1]{{\large #1}\\}
+\newcommand{\IEEEauthorblockA}[1]{\begin{tabular}[t]{c}\small\itshape #1\end{tabular}}
+\newcommand{\IEEEPARstart}[2]{#1#2}
+\newenvironment{IEEEkeywords}{\small\noindent\textbf{\textit{Index Terms}}---}{\par\medskip}
+\renewenvironment{abstract}{\small\noindent\textbf{\textit{Abstract}}---\bfseries}{\par\medskip}
+\newcommand{\IEEEoverridecommandlockouts}{}
+\providecommand{\IEEEmembership}[1]{}
+\endinput
